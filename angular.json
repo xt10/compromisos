@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "controlCompromise"
+  "defaultProject": "controlCompromise",
+  "cli": {
+    "analytics": "d76dab27-a4c4-48ff-8a42-ae6e974cfd88"
+  }
 }

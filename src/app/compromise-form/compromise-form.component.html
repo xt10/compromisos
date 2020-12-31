@@ -1,0 +1,60 @@
+<div class="container">
+
+    <div class="row">
+
+        <mat-form-field class="col-4">
+            <mat-label>Proyecto</mat-label>
+            <input matInput placeholder="Proyecto X Y Z" value="">
+        </mat-form-field>
+
+        <mat-form-field class="col-4">
+            <mat-label>Responsable</mat-label>
+            <input matInput placeholder="Juan Perez" value="">
+        </mat-form-field>
+        <div class="col-4"></div>
+
+        <mat-form-field class="col-4">
+            <mat-label>Fecha Compromiso</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <div class="col-8"></div>
+
+        <mat-form-field class="col-6">
+            <mat-label>Compromiso</mat-label>
+            <textarea matInput placeholder="Compromiso" value="">
+                    </textarea>
+        </mat-form-field>
+
+        <mat-form-field class="col-6">
+            <mat-label>Comentarios</mat-label>
+            <textarea matInput placeholder="Comentarios" value="">
+                    </textarea>
+        </mat-form-field>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-8">
+        </div>
+
+        <div class="col-sm">
+            <button mat-raised-button icon="mat" color="secundary">
+            <mat-icon>save</mat-icon>
+            Guardar</button>
+        </div>
+
+        <div class="col-sm">
+            <button mat-raised-button icon="mat" color="primary">
+            <mat-icon>add_task</mat-icon>
+            Limpiar/Nuevo</button>
+        </div>
+    </div>
+
+    <div class="col-2"></div>
+
+
+</div>
